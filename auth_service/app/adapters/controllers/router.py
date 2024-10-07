@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Request, HTTPException
-from services.authenticate import get_student_token
+from domain.services.authenticate import get_student_token
 
 
 api_router = APIRouter()  

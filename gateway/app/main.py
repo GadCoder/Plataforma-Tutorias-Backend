@@ -1,10 +1,9 @@
 import os
 import pika
 import uvicorn
+from fastapi import FastAPI
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException ,  File, UploadFile
-from api.base import api_router
-
+from adapters.controllers.base import api_router
 
 load_dotenv()
 

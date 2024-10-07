@@ -2,8 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 from fastapi import APIRouter, HTTPException
-from schemas.user import UserCredentials
-
+from domain.schemas.user import UserCredentials
 
 load_dotenv()
 

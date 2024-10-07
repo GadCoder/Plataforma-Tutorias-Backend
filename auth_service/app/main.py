@@ -1,7 +1,8 @@
 import pika
 import uvicorn
 from fastapi import FastAPI
-from api.v1.router import api_router
+from adapters.controllers.router import api_router
+
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost"))
 channel = connection.channel()
